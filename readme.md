@@ -93,3 +93,5 @@ function Card({ username = "Gaben", post = "Not assigned yet" }) {
 <Card username="Jason" post="Beautiful man" />
 ```
 
+## 8. background generator
+simple on click background changer using react and tailwind. Basically a summary of what we learned so far and getting used to creating project, installing tailwind, and developing simple apps

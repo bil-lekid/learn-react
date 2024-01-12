@@ -9,6 +9,11 @@ const ReactElement = React.createElement(
   'click to visit google'
 )
 
+
+const AnotherElement = (
+  <a href="https://google.com" target="_blank">click to visit google</a>
+)
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   ReactElement
 );

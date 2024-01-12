@@ -33,3 +33,8 @@ setCounter(counter + 1)
 setCounter(counter + 1)
 }
 ```
+
+## 6. React Fiber
+- Avoid re-rendering, use reconciliation.
+- give flexibility for animation
+- Virtual DOM

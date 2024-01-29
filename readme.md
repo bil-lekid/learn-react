@@ -95,3 +95,7 @@ function Card({ username = "Gaben", post = "Not assigned yet" }) {
 
 ## 8. background generator
 simple on click background changer using react and tailwind. Basically a summary of what we learned so far and getting used to creating project, installing tailwind, and developing simple apps
+
+
+## 9. Password Generator
+useEffect, useCallback, useRef a lot of important hook that enables re-rendering and a lot of interactivity between elements!

@@ -105,3 +105,7 @@ useEffect, useCallback, useRef a lot of important hook that enables re-rendering
 ## 10. Currency Exchange
 
 React is highly reusable, using useId, best practice for importing components and custom hooks, components are reusable and customizable based, fetch api and selecting which data we want on the json.
+
+# 11. Routing
+
+Basic portfolio page with routing for different section such as home, about, contact, and etc. learned react-router-dom, useParams hook, Link, NavLink, `createBrowserRouter(createRoutesFromElements(<Route />))`, and much more

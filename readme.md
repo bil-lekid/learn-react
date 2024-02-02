@@ -117,3 +117,21 @@ setup boiler plate context code, wrap your components with the context. Create c
 ## 13. Context Api with light and dark theme
 
 three step, create the context, make sure every element is aware of the context using provider, then they can always use the context using useContext.
+
+## 14. Context with local storage
+
+1. ATTACK THE CONTEXT FIRST
+
+- create context, and add all the data and functionality boiler plate
+- make a context provider
+- make custom hook for useContext
+
+2. Wrap the App with TodoProvider
+
+- define all the functionality and state to app.jsx
+- add all the functionality and state to context
+
+3. Attack the components
+
+- TodoForm, able to add Todo items
+- TodoList, able to edit (change from input uneditable to editable) item, delete item, and toggleComplete

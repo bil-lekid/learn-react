@@ -109,3 +109,7 @@ React is highly reusable, using useId, best practice for importing components an
 # 11. Routing
 
 Basic portfolio page with routing for different section such as home, about, contact, and etc. learned react-router-dom, useParams hook, Link, NavLink, `createBrowserRouter(createRoutesFromElements(<Route />))`, and much more
+
+## 12. Context API in react .get the concept
+
+setup boiler plate context code, wrap your components with the context. Create context and context provider and then wrap all the component then every single component can access the data or set the data from the context

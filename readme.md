@@ -113,3 +113,7 @@ Basic portfolio page with routing for different section such as home, about, con
 ## 12. Context API in react .get the concept
 
 setup boiler plate context code, wrap your components with the context. Create context and context provider and then wrap all the component then every single component can access the data or set the data from the context
+
+## 13. Context Api with light and dark theme
+
+three step, create the context, make sure every element is aware of the context using provider, then they can always use the context using useContext.

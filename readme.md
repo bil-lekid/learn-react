@@ -135,3 +135,22 @@ three step, create the context, make sure every element is aware of the context 
 
 - TodoForm, able to add Todo items
 - TodoList, able to edit (change from input uneditable to editable) item, delete item, and toggleComplete
+
+## Extra 1. Redux toolkit 1 hour
+
+- store: the global centralized data
+- reducer: a way to update, add, or delete stuff, essentially an object filled with actions
+- useSelector: A hook so element can selectively ask for items in store
+- useDispatch: hook for calling specific reducer to update information in store
+- slice: a initial state
+
+step:
+
+1. create store with `configureStore()` with reducer inside
+2. Wrap everything with `Provider`
+3. create slice:
+4. create initial state
+5. create slice with name, initial state, and reducers
+6. export slice and reducers
+7. export default todoSlice reducer
+8. dispatch is to use reducers

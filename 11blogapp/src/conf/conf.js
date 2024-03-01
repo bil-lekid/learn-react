@@ -1,13 +1,12 @@
 const conf = {
-  appwiretUrl: String(process.env.REACT_APP_APPWRITE_URL),
-  appwriteProjectId: String(process.env.REACT_APP_APPWRITE_PROJECT_ID),
-  appwriteDatabaseId: String(
-    process.env.REACT_APP_APPWRITE_PROJECT_DATABASE_ID
-  ),
+  appwriteUrl: String(import.meta.env.VITE_APPWRITE_URL),
+  appwriteProjectId: String(import.meta.env.VITE_APPWRITE_PROJECT_ID),
+  appwriteDatabaseId: String(import.meta.env.VITE_APPWRITE_PROJECT_DATABASE_ID),
   appwriteCollectionId: String(
-    process.env.REACT_APP_APPWRITE_PROJECT_COLLECTION_ID
+    import.meta.env.VITE_APPWRITE_PROJECT_COLLECTION_ID
   ),
-  appwriteBucketId: String(process.env.REACT_APP_APPWRITE_PROJECT_BUCKET_ID),
+  appwriteBucketId: String(import.meta.env.VITE_APPWRITE_PROJECT_BUCKET_ID),
+  tinymceAPIKey: String(import.meta.env.VITE_TINYMCE_API_KEY),
 };
 
 export default conf;

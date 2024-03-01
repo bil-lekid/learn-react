@@ -8,7 +8,7 @@ export class Service {
 
   constructor() {
     this.client
-      .setEndpoint(conf.appwiretUrl)
+      .setEndpoint(conf.appwriteUrl)
       .setProject(conf.appwriteProjectId);
     this.databases = new Databases(this.client);
     this.bucket = new Storage(this.client);
@@ -42,7 +42,7 @@ export class Service {
     try {
       return await this.databases.createDocument(
         conf.appwriteDatabaseId,
-        appwriteCollectionId,
+        conf.appwriteCollectionId,
         slug,
         { title, content, featuredImage, status, userId }
       );
@@ -81,6 +81,7 @@ export class Service {
   // * storage service
   async uploadFile(file) {
     try {
+      console.log(conf.appwriteBucketId);
       return await this.bucket.createFile(
         conf.appwriteBucketId,
         ID.unique(),

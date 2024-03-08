@@ -27,14 +27,14 @@ function App() {
   }, [dispatch]);
 
   return !loading ? (
-    <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
+    <div className="min-h-screen flex flex-wrap content-between bg-[#0a192f]">
       <div className="w-full block">
         <Header />
         <main>
           <Outlet />
         </main>
       </div>
-      <div className="w-full block">
+      <div className="w-full block ">
         <Footer />
       </div>
     </div>

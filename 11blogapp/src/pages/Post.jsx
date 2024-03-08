@@ -15,7 +15,6 @@ function Post() {
   const isAuthor = post && userData ? post.userId === userData.$id : false;
 
   useEffect(() => {
-    console.log(post);
     if (slug) {
       appwriteService.getPost(slug).then((post) => {
         if (post) {

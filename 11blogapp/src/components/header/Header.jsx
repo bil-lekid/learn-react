@@ -37,20 +37,23 @@ const Header = () => {
     },
   ];
   return (
-    <header className="py-3 shadow bg-gray-500">
+    <header className="py-3 shadow bg-[#192f4c]">
       <Container>
-        <nav className="flex">
-          <div className="mr-4">
+        <nav className="flex items-center justify-between">
+          <div className="mr-4 flex items-center gap-5">
             <Link to="/">
-              <Logo />
+              <Logo width="50px" />
             </Link>
+            <h1 className="text-slate-100 font-extrabold text-2xl">
+              Hitni's Blog App
+            </h1>
           </div>
-          <ul className="flex ml-auto">
+          <ul className="flex text-gray-300">
             {navItems.map((item) => {
               return item.active ? (
                 <li key={item.name}>
                   <button
-                    className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full"
+                    className="inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full hover:text-pink-600"
                     onClick={() => navigate(item.slug)}
                   >
                     {item.name}

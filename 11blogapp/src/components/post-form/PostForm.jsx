@@ -72,8 +72,8 @@ export default function PostForm({ post }) {
     });
   }, [watch, slugTransform, setValue]);
   return (
-    <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
-      <div className="w-2/3 px-2">
+    <form onSubmit={handleSubmit(submit)} className="p-3 flex flex-wrap">
+      <div className="w-2/3 px-2 text-slate-50 mx-auto">
         <Input
           label="Title"
           placeholder="Title"
@@ -98,7 +98,7 @@ export default function PostForm({ post }) {
           defaultValue={getValues("content")}
         />
       </div>
-      <div className="1/3 px-2">
+      <div className="1/3 px-2 mx-auto text-slate-100 mt-2">
         <Input
           label="Featured Image"
           type="file"
@@ -117,14 +117,14 @@ export default function PostForm({ post }) {
         )}
         <Select
           options={["active", "inactive"]}
-          label="Status"
-          className="mb-4"
+          label="Status :"
+          className="text-slate-700"
           {...register("status", { required: true })}
         />
         <Button
           type="submit"
           bgColor={post ? "bg-green-500" : undefined}
-          className="w-full"
+          className="w-full mt-2"
         >
           {post ? "Update" : "Submit"}
         </Button>

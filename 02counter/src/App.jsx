@@ -1,17 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  
-  const [counter, setCounter] = useState(0)
+  const [counter, setCounter] = useState(0);
   const addValue = () => {
-    setCounter((prevCounter) => prevCounter+1)
-    setCounter((prevCounter) => prevCounter+1)
-  }
+    setCounter((prevCounter) => prevCounter + 1);
+  };
   const substractValue = () => {
-    setCounter(counter-1)
-    console.log(counter)
-  }
+    setCounter(counter - 1);
+    console.log(counter);
+  };
 
   return (
     <>
@@ -21,7 +19,7 @@ function App() {
       <button onClick={substractValue}>Remove value</button>
       <p>footer: {counter}</p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
